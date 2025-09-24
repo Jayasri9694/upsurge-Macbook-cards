@@ -40,9 +40,9 @@ export default function CardGrid() {
           Why Choose Upsurge Media
         </h2>
         <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-          We deliver exceptional IT services that drive digital transformation
+          We deliver exceptional IT services that drive digital transformation and
           <br />
-          and business growth through innovative solutions and expert support.
+         business growth through innovative solutions and expert support.
         </p>
       </div>
 
@@ -69,7 +69,7 @@ export default function CardGrid() {
         {/* 1 → 2 */}
         {visibleArrows.includes(1) && (
           <path
-            d="M 300 100 C 550 250, 650 150, 800 200"
+            d="M 320 40 C 990 250, 650 150, 900 200"
             className="arrow-path"
             markerEnd="url(#arrowhead)"
           />
@@ -78,7 +78,7 @@ export default function CardGrid() {
         {/* 2 → 3 */}
         {visibleArrows.includes(2) && (
           <path
-            d="M 800 220 C 700 320, 500 300, 400 400"
+            d="M 800 220 C 300 320, 500 300, 400 400"
             className="arrow-path"
             markerEnd="url(#arrowhead)"
           />
