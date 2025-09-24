@@ -2,15 +2,47 @@
 
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import { Users, Award, Clock, Heart, Cpu, DollarSign } from "lucide-react";
 
 const cards = [
-  { title: "Expert Team", desc: "Skilled professionals delivering innovative solutions tailored to your business", icon: "🌞", accent: "bg-yellow-100" },
-  { title: "Quality First", desc: "We ensure top-notch standards in every project we deliver", icon: "🏅", accent: "bg-purple-100" },
-  { title: "On-Time Delivery", desc: "Punctual project execution without compromising quality", icon: "⏰", accent: "bg-pink-100" },
-  { title: "Customer-Centric", desc: "We listen, understand, and design around your needs", icon: "💙", accent: "bg-gray-100" },
-  { title: "Cutting-Edge Tech", desc: "Latest tools & technologies to give you a competitive edge", icon: "💻", accent: "bg-green-100" },
-  { title: "Affordable Solutions", desc: "Premium results that fit your budget", icon: "💲", accent: "bg-red-100" },
+  {
+    title: "Expert Team",
+    desc: "Skilled professionals delivering innovative solutions tailored to your business",
+    icon: <Users className="w-6 h-6 text-yellow-500" strokeWidth={2}/>,
+    accent: "bg-yellow-100",
+  },
+  {
+    title: "Quality First",
+    desc: "We ensure top-notch standards in every project we deliver",
+    icon: <Award className="w-6 h-6 text-purple-600" strokeWidth={2} />,
+    accent: "bg-purple-100",
+  },
+  {
+    title: "On-Time Delivery",
+    desc: "Punctual project execution without compromising quality",
+    icon: <Clock className="w-6 h-6 text-pink-500" strokeWidth={2}/>,
+    accent: "bg-pink-100",
+  },
+  {
+    title: "Customer-Centric",
+    desc: "We listen, understand, and design around your needs",
+    icon: <Heart className="w-6 h-6 text-sky-500" strokeWidth={2}/>,
+    accent: "bg-sky-100",
+  },
+  {
+    title: "Cutting-Edge Tech",
+    desc: "Latest tools & technologies to give you a competitive edge",
+    icon: <Cpu className="w-6 h-6 text-green-500" strokeWidth={2}/>,
+    accent: "bg-green-100",
+  },
+  {
+    title: "Affordable Solutions",
+    desc: "Premium results that fit your budget",
+    icon: <DollarSign className="w-6 h-6 text-red-500" strokeWidth={2} />,
+    accent: "bg-red-100",
+  },
 ];
+
 
 export default function CardGrid() {
   const [visibleCards, setVisibleCards] = useState([]);
